@@ -1,0 +1,24 @@
+// 布局样式
+
+#d2-layout-header-aside {
+  min-height: 100vh;
+  .logo {
+    width: 130px;
+    height: 30px;
+    display: block;
+    margin: 17px auto;
+  }
+  #d2-layout-header-aside--tabs {
+    .ant-tabs-bar.ant-tabs-top-bar.ant-tabs-card-bar {
+      margin-bottom: 0px;
+    }
+  }
+  #d2-layout-header-aside--view {
+    padding: 24px;
+    background-color: #FFF;
+    border: 1px solid #e8e8e8;
+    border-top-width: 0px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}
