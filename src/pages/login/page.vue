@@ -9,7 +9,7 @@
             <span class="logo-title">D2Admin Ant</span>
         </div>
         <div class="d2-admin-ant-layouts-login-desc">
-          Ant Design 是西湖区最具影响力的 Web 设计规范
+          在 D2Admin 上体验西湖区最具影响力的 Web 设计规范
         </div>
       </div>
       <!-- main -->
@@ -18,30 +18,41 @@
           <a-tabs
             class="d2-admin-ant-layouts-login-tab"
             defaultActiveKey="1"
-            :animated="false"
-          >
+            :animated="false">
             <!-- 账户密码登陆 -->
             <a-tab-pane tab="账户密码登陆" key="1">
               <d2-login-form-user/>
             </a-tab-pane>
             <!-- 手机号登陆 -->
             <a-tab-pane tab="手机号登陆" key="2" forceRender>
-
+              <d2-login-form-phone/>
             </a-tab-pane>
           </a-tabs>
         </div>
       </div>
     </div>
+    <footer class="d2-admin-ant-layouts-login-footer" flex-box="0">
+      <div class="d2-admin-ant-layouts-login-links">
+        <a title="help" target="_self" href="">帮助</a>
+        <a title="privacy" target="_self" href="">隐私</a>
+        <a title="terms" target="_self" href="">条款</a>
+      </div>
+      <div class="d2-admin-ant-layouts-login-copyright">
+        Copyright <a-icon type="copyright" /> 2019 D2 Projects 开源组出品
+      </div>
+    </footer>
   </div>
 </template>
 
 <script>
 import { mapActions } from 'vuex'
 import d2LoginFormUser from './components/form-user'
+import d2LoginFormPhone from './components/form-phone'
 
 export default {
   components: {
-    d2LoginFormUser
+    d2LoginFormUser,
+    d2LoginFormPhone
   },
   data () {
     return {

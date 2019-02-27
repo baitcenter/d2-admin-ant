@@ -48,4 +48,26 @@
       }
     }
   }
+  .d2-admin-ant-layouts-login-footer {
+    margin: 48px 0 24px;
+    padding: 0 16px;
+    text-align: center;
+    .d2-admin-ant-layouts-login-links {
+      margin-bottom: 8px;
+      a {
+        color: rgba(#000, .45);
+        transition: all .3s;
+        &:hover {
+          color: rgba(#000, .65);
+        }
+      }
+      a:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+    .d2-admin-ant-layouts-login-copyright {
+      color: rgba(#000, .45);
+      font-size: 14px;
+    }
+  }
 }

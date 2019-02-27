@@ -6,31 +6,38 @@
     <a-form-item>
       <a-input
         v-decorator="[
-          'formUserUserName',
-          { rules: [{ required: true, message: '请输入用户名' }] }
+          'phone',
+          { rules: [{ required: true, message: '请输入手机号' }] }
         ]"
-        placeholder="用户名: admin"
+        placeholder="手机号"
         size="large">
-        <a-icon slot="prefix" type="user" style="color: rgba(0,0,0,.25)"/>
+        <a-icon slot="prefix" type="mobile" style="color: rgba(0,0,0,.25)"/>
       </a-input>
     </a-form-item>
     <a-form-item>
-      <a-input
-        v-decorator="[
-          'formUserPassword',
-          { rules: [{ required: true, message: '请输入密码' }] }
-        ]"
-        type="password"
-        placeholder="密码: 000000"
-        size="large">
-        <a-icon slot="prefix" type="lock" style="color: rgba(0,0,0,.25)"/>
-      </a-input>
+      <a-row :gutter="8">
+        <a-col :span="16">
+          <a-input
+            v-decorator="[
+              'phoneCode',
+              { rules: [{ required: true, message: '请输入验证码' }] }
+            ]"
+            type="password"
+            placeholder="验证码"
+            size="large">
+            <a-icon slot="prefix" type="mail" style="color: rgba(0,0,0,.25)"/>
+          </a-input>
+        </a-col>
+        <a-col :span="8">
+          <a-button size="large" :style="{ width: '100%' }">获取验证码</a-button>
+        </a-col>
+      </a-row>
     </a-form-item>
     <a-form-item>
       <p>
         <a-checkbox
           v-decorator="[
-            'formUserRemember',
+            'formPhoneRemember',
             {
               valuePropName: 'checked',
               initialValue: true,
