@@ -1,0 +1,51 @@
+.d2-admin-ant-layouts-login-container {
+  height: 100vh;
+  overflow: auto;
+  background: #f0f2f5;
+  background-image: url(https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg);
+  background-repeat: no-repeat;
+  background-position: center 110px;
+  background-size: 100%;
+  .d2-admin-ant-layouts-login-lang {
+    width: 100%;
+    height: 44px;
+  }
+  .d2-admin-ant-layouts-login-content {
+    padding: 32px 0 24px;
+    .d2-admin-ant-layouts-login-top {
+      .d2-admin-ant-layouts-login-logo {
+        .logo {
+          height: 44px;
+          width: 44px;
+          margin-right: 10px;
+        }
+        .logo-title {
+          color: rgba(0,0,0,.85);
+          font-weight: 600;
+          font-size: 33px;
+          font-family: Avenir,Helvetica Neue,Arial,Helvetica,sans-serif;
+        }
+      }
+      .d2-admin-ant-layouts-login-desc {
+        margin-top: 12px;
+        margin-bottom: 40px;
+        color: rgba(0,0,0,.45);
+        font-size: 14px;
+      }
+    }
+    .d2-admin-ant-layouts-login-main {
+      .d2-admin-ant-layouts-login-form {
+        width: 388px;
+        margin: 0px auto;
+        .d2-admin-ant-layouts-login-tab {
+          .ant-tabs-bar {
+            text-align: center;
+          }
+          .ant-tabs-bar {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

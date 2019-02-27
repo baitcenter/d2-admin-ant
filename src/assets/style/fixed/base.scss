@@ -1,0 +1,12 @@
+// 优化显示
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: Avenir,Helvetica Neue,Arial,Helvetica,sans-serif;
+  #app {
+    @extend %full;
+    a {
+      text-decoration: none;
+    }
+  }
+}

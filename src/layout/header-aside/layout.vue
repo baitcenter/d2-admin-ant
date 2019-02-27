@@ -6,9 +6,7 @@
   <a-layout id="d2-layout-header-aside">
     <a-layout-sider
       breakpoint="lg"
-      collapsedWidth="0"
-      @collapse="onCollapse"
-      @breakpoint="onBreakpoint">
+      collapsedWidth="0">
       <img class="logo" src="logo.png">
       <a-menu
         theme="dark"
@@ -53,34 +51,23 @@
         </a-menu>
       </a-layout-header>
       <a-layout-content :style="{ margin: '24px 16px 0' }">
-        <a-tabs type="card" id="d2-layout-header-aside--tabs">
-          <a-tab-pane tab="Tab 1" key="1"></a-tab-pane>
-          <a-tab-pane tab="Tab 2" key="2"></a-tab-pane>
-          <a-tab-pane tab="Tab 3" key="3"></a-tab-pane>
-          <a-tab-pane tab="Tab 4" key="4"></a-tab-pane>
-          <a-tab-pane tab="Tab 5" key="5"></a-tab-pane>
-          <a-tab-pane tab="Tab 6" key="6"></a-tab-pane>
-        </a-tabs>
+        <d2-layout-tabs/>
         <div id="d2-layout-header-aside--view">
           <router-view/>
         </div>
       </a-layout-content>
-      <a-layout-footer style="textAlign: center">
-        Ant Design ©2018 Created by Ant UED
-      </a-layout-footer>
+      <d2-layout-footer/>
     </a-layout>
   </a-layout>
 </template>
 
 <script>
+import d2LayoutTabs from './components/tabs'
+import d2LayoutFooter from './components/footer'
 export default {
-  methods: {
-    onCollapse (collapsed, type) {
-      console.log(collapsed, type)
-    },
-    onBreakpoint (broken) {
-      console.log(broken)
-    }
+  components: {
+    d2LayoutTabs,
+    d2LayoutFooter
   }
 }
 </script>

@@ -1,11 +1,11 @@
 import Vue from 'vue'
-import Antd from 'ant-design-vue'
-import 'ant-design-vue/dist/antd.css'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import d2Admin from '@/plugin/d2admin'
 
-Vue.use(Antd)
+// 核心插件
+Vue.use(d2Admin)
 
 Vue.config.productionTip = false
 
