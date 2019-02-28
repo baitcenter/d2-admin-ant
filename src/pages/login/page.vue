@@ -1,6 +1,8 @@
 <template>
   <div class="d2-admin-ant-layouts-login-container" flex="dir:top main:justify cross:center">
-    <div class="d2-admin-ant-layouts-login-lang" flex-box="0"></div>
+    <div class="d2-admin-ant-layouts-login-lang" flex-box="0">
+      <!-- 占位 -->
+    </div>
     <div class="d2-admin-ant-layouts-login-content" flex-box="1">
       <!-- top -->
       <div class="d2-admin-ant-layouts-login-top" flex="dir:top cross:center">
